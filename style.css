@@ -1,0 +1,266 @@
+*{
+    /* CSS Reset */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    text-transform: capitalize;
+    
+}
+
+body{
+    /* Set Display and Flexbox */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    height: 100vh;
+    background-color: rgb(244, 233, 212);
+    overflow: hidden;
+}
+
+nav{
+    position:fixed;
+    top: 0;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    width: 100vw;
+    font-size: 21px;
+    /* padding-top: 30px; */
+    padding: 30px 50px;
+
+
+}
+
+.logo{
+    font-size: 45px;
+    font-weight: 600;
+    color: #7743DB;
+    position: relative;
+    top: -10px;
+
+}
+
+nav .list ul{
+    display: flex;
+    
+    
+
+}
+
+nav .list ul li{
+    padding:0 10px;
+    
+}
+.list ul li a{
+    /* background-color: rgb(179, 179, 250); */
+    padding: 7px 20px;
+    border-radius: 5px;
+    /* width: 100px; */
+}
+
+
+.list ul li:nth-child(1) a{
+    background-color: rgb(179, 179, 250);
+   
+}
+.list ul li a:hover{
+    background-color: rgb(179, 179, 250);
+    
+}
+
+
+.search{
+    padding: 7px 10px;
+    border-radius: 5px;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border: 1px solid black;
+    width: 200px;
+    font-size: 18px;
+
+
+    position: relative;
+    top: -12px;
+
+}
+.search:hover{
+    background-color: rgb(250, 65, 65);
+    color: white;
+    border: none;
+}
+
+.intro{
+    /* float: left; */
+    position: absolute;
+    left: 50px;
+
+}
+
+.intro p{
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: 500;
+   
+}
+
+
+
+.intro h1{
+    font-size: 75px;
+    background: linear-gradient(to right, rgb(169, 12, 169), rgb(239, 147, 162));
+    -webkit-background-clip: text;
+    color: transparent;
+    line-height: 100px;
+}
+
+.intro p:nth-child(3){
+    font-size: 44px;
+    /* background-color: #e79f9f; */
+    font-weight: 500;
+    /* display: inline; */
+}
+
+ .type{
+    margin-top: 20px;
+    font-size: 50px;
+    text-transform: none;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #000;
+    /* background-color: #e2a9a9; */
+    animation: typing 7s  steps(25, end)  infinite, cursor-blink 1s step-end infinite;
+    color:#FF6C22;
+    background-color: rgba(255,255,255,.8);
+
+
+}
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 16.3ch;
+    }
+    100%{
+        width: 0;
+    }
+}
+
+@keyframes cursor-blink {
+    from, to {
+        border-right-color: transparent;
+    }
+    50% {
+        border-right-color: #000;
+    }
+}
+.intro input{
+    font-size: 30px;
+    margin:10px 25px;
+    padding: 12px 20px;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #44a2f9, #f348ff); /* Adjust the gradient colors as needed */
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    top: 50px;
+
+}
+
+.intro input:hover{
+    opacity: .9;
+}
+
+
+
+
+.background-circle .c1{
+      width: 250px;
+      height: 250px;
+      background-color: rgb(2, 192, 255);
+      border-radius: 50%;
+      position: absolute;
+      right: 200px;
+      top: 200px;
+
+
+}
+
+
+.background-circle .c1::before{
+    content: " ";
+    width: 250px;
+    height: 250px;
+    background-color: rgb(2, 192, 255);
+    border-radius: 50%;
+    transform: translateY(80%) translateX(42%);
+    
+    position: absolute;
+
+}
+.background-circle .c1::after{
+    content: " ";
+    width: 250px;
+    height: 250px;
+    background-color: rgb(2, 192, 255);
+    border-radius: 50%;
+    transform: translateY(80%) translateX(-42%);
+    
+    position: absolute;
+
+}
+
+
+
+.background-circle .c2{
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(45deg, #f29494, #D2E3C8);
+    opacity: .8;
+    border-radius: 50%;
+    position: absolute;
+    left: 70px;
+    /* transform: translateY(-100%); */
+    z-index: -1;
+    top: 30vh;
+
+}
+
+
+
+.image {
+   
+    background-size: contain;
+  
+    position: absolute;
+    background-repeat: none;
+    top: 200px;
+    right: 120px;
+    /* background-color: blue; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+
+    
+}
+
+.image img{
+    height: 700px;
+   
+}
+
+.shape img{
+    position: relative;
+    left:450px;
+    z-index: -1;
+    height: 750px;
+    top: 100px;
+}
